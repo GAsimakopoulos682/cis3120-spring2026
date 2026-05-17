@@ -43,6 +43,37 @@ FINANCIAL_SERVICES_PHRASES = [
     '"operations center"',
     '"data center"',
     '"new location"',
+
+    '"branch relocation"',
+    '"relocated branch"',
+    '"relocation of services"',
+    '"service center"',
+    '"customer service center"',
+    '"contact center"',
+    '"call center expansion"',
+    '"call center closure"',
+    '"operational hub"',
+    '"corporate headquarters"',
+    '"headquarters relocation"',
+    '"administrative office"',
+    '"satellite office"',
+    '"field office"',
+    '"facility expansion"',
+    '"facility upgrade"',
+    '"facility investment"',
+    '"office expansion"',
+    '"office move"',
+    '"leased space"',
+    '"new facility"',
+    '"property acquisition"',
+    '"real estate transaction"',
+    '"real estate sale"',
+    '"site redevelopment"',
+    '"infrastructure investment"',
+    '"operations expansion"',
+    '"business expansion"',
+    '"strategic footprint"',
+    '"market expansion"',
 ]
 
 # ──────────────────────────────────────────────────────────────────────────
@@ -61,7 +92,6 @@ TRAVEL_HOSPITALITY_TICKERS = [
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
-    #given
     '"new property"',
     '"new hotel"',
     '"hotel opening"',
@@ -73,7 +103,6 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"new terminal"',
     '"grand opening"',
     
-    # Added
     '"new resort"',
     '"hotel development"',
     '"hospitality development"',
