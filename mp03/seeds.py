@@ -61,6 +61,7 @@ TRAVEL_HOSPITALITY_TICKERS = [
 ]
 
 TRAVEL_HOSPITALITY_PHRASES = [
+    #given
     '"new property"',
     '"new hotel"',
     '"hotel opening"',
@@ -71,4 +72,36 @@ TRAVEL_HOSPITALITY_PHRASES = [
     '"new gateway"',
     '"new terminal"',
     '"grand opening"',
+    
+    # Added
+    '"new resort"',
+    '"hotel development"',
+    '"hospitality development"',
+    '"property expansion"',
+    '"new hospitality project"',
+    '"management agreement"',
+    '"franchise agreement"',
+    '"new destination"',
+    '"new airline route"',
+    '"route expansion"',
+    '"expanded service"',
+    '"new service to"',
+    '"international service"',
+    '"airport expansion"',
+    '"new flight route"',
+    '"property acquisition"',
+    '"hotel acquisition"',
+    '"resort acquisition"',
+    '"casino opening"',
+    '"new market"',
+    '"new location"',
+    '"site selection"',
+    '"facility opening"',
+    '"new facility"',
+    '"expansion project"',
+    '"construction project"',
+    '"opening ceremony"',
+    '"development project"',
+    '"real estate development"',
+    '"mixed-use development"',
 ]
