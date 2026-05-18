@@ -1,0 +1,1838 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b022bf9c3e24736d261489101700e81a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b022bf9c3e24736d261489101700e81a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b022bf9c3e24736d261489101700e81a = L.map(
+                "map_b022bf9c3e24736d261489101700e81a",
+                {
+                    center: [39.8, -98.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3367e8bf68d3d6490692f10270d697c5 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3367e8bf68d3d6490692f10270d697c5.addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var marker_bb2ee8798625bde7d86cdd6e8683c015 = L.marker(
+                [42.4184296, -71.1061639],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_bf6adc8529dd5dbe895ca8f7fac58eab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e16f748c2060565bac415010e860605 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f52d62d6a2b8bceb333123611e50f868 = $(`<div id="html_f52d62d6a2b8bceb333123611e50f868" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> ECB Bancorp, Inc. /MD/  (ECBK)  (CIK 0001914605)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-01-09<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> New bank branch office opening at 501 High Street, Medford, Massachusetts in Q3 2026.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1914605/000143774926000982/ecbk20260106_8k.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_1e16f748c2060565bac415010e860605.setContent(html_f52d62d6a2b8bceb333123611e50f868);
+            
+        
+
+        marker_bb2ee8798625bde7d86cdd6e8683c015.bindPopup(popup_1e16f748c2060565bac415010e860605)
+        ;
+
+        
+    
+    
+            marker_bb2ee8798625bde7d86cdd6e8683c015.bindTooltip(
+                `<div>
+                     ECB Bancorp, Inc. /MD/  (ECBK)  (CIK 0001914605)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bb2ee8798625bde7d86cdd6e8683c015.setIcon(icon_bf6adc8529dd5dbe895ca8f7fac58eab);
+            
+    
+            var marker_07f446ed97bfd787d34c2a6c2c68bd7b = L.marker(
+                [37.270973, -79.9414313],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_63b8da4ef9879fe76d72af3db90480da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2169ac6c6fbd67b31f5e936911ff8f66 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_06986fc619cd1783ed56c3e92a1c0e87 = $(`<div id="html_06986fc619cd1783ed56c3e92a1c0e87" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> NATIONAL BANKSHARES INC  (NKSH)  (CIK 0000796534)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-04-14<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> New branch facility opened in Roanoke to support expansion in dynamic market with growth prospects.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/796534/000119312526154248/nksh-ex99_1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_2169ac6c6fbd67b31f5e936911ff8f66.setContent(html_06986fc619cd1783ed56c3e92a1c0e87);
+            
+        
+
+        marker_07f446ed97bfd787d34c2a6c2c68bd7b.bindPopup(popup_2169ac6c6fbd67b31f5e936911ff8f66)
+        ;
+
+        
+    
+    
+            marker_07f446ed97bfd787d34c2a6c2c68bd7b.bindTooltip(
+                `<div>
+                     NATIONAL BANKSHARES INC  (NKSH)  (CIK 0000796534)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_07f446ed97bfd787d34c2a6c2c68bd7b.setIcon(icon_63b8da4ef9879fe76d72af3db90480da);
+            
+    
+            var marker_afe942af5f770d5f0a314c7a37894c6a = L.marker(
+                [42.4184296, -71.1061639],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_0637cdf0f2929bf517cb4b48cd6edb01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dcfcc852e455dfccf7504873022e2e5b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a75347f0ca7eb43f91ec8fbdafd87a4a = $(`<div id="html_a75347f0ca7eb43f91ec8fbdafd87a4a" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> ECB Bancorp, Inc. /MD/  (ECBK)  (CIK 0001914605)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-01-09<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Everett Co-operative Bank plans to open a full-service branch office in Medford, Massachusetts in Q3 2026.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1914605/000143774926000982/ex_904720.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_dcfcc852e455dfccf7504873022e2e5b.setContent(html_a75347f0ca7eb43f91ec8fbdafd87a4a);
+            
+        
+
+        marker_afe942af5f770d5f0a314c7a37894c6a.bindPopup(popup_dcfcc852e455dfccf7504873022e2e5b)
+        ;
+
+        
+    
+    
+            marker_afe942af5f770d5f0a314c7a37894c6a.bindTooltip(
+                `<div>
+                     ECB Bancorp, Inc. /MD/  (ECBK)  (CIK 0001914605)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_afe942af5f770d5f0a314c7a37894c6a.setIcon(icon_0637cdf0f2929bf517cb4b48cd6edb01);
+            
+    
+            var marker_f9aaa57a4fb934147d5c1b1cd30eff8c = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_bccd98df3d8c9f93fb264b6c52a67b82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e555e0e0b51b363b559bc3c776b3def = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a31a0d91cedd3dd17945578b50c3a7ac = $(`<div id="html_a31a0d91cedd3dd17945578b50c3a7ac" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-04-22<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Unity Bank opened a new full-service branch location in Madison, New Jersey during 2025.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042726000031/unty-20260422xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_3e555e0e0b51b363b559bc3c776b3def.setContent(html_a31a0d91cedd3dd17945578b50c3a7ac);
+            
+        
+
+        marker_f9aaa57a4fb934147d5c1b1cd30eff8c.bindPopup(popup_3e555e0e0b51b363b559bc3c776b3def)
+        ;
+
+        
+    
+    
+            marker_f9aaa57a4fb934147d5c1b1cd30eff8c.bindTooltip(
+                `<div>
+                     UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f9aaa57a4fb934147d5c1b1cd30eff8c.setIcon(icon_bccd98df3d8c9f93fb264b6c52a67b82);
+            
+    
+            var marker_78d740e2dc3fe994524e64466dd02402 = L.marker(
+                [37.9020731, -122.0618702],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_08038a4fb783ee45785f5588dec361cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a93c845ece99ade9c7bafc4ac4bf09ec = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b3bb68cce11c4827ad6b5a8c2ec433c2 = $(`<div id="html_b3bb68cce11c4827ad6b5a8c2ec433c2" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> FARMERS &amp; MERCHANTS BANCORP  (FMCB)  (CIK 0001085913)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-04-23<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> First Merchants Bank opening downtown Walnut Creek location at 1823 N. Main St. in Q3 2026.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1085913/000114036126016185/ef20071199_ex99-1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_a93c845ece99ade9c7bafc4ac4bf09ec.setContent(html_b3bb68cce11c4827ad6b5a8c2ec433c2);
+            
+        
+
+        marker_78d740e2dc3fe994524e64466dd02402.bindPopup(popup_a93c845ece99ade9c7bafc4ac4bf09ec)
+        ;
+
+        
+    
+    
+            marker_78d740e2dc3fe994524e64466dd02402.bindTooltip(
+                `<div>
+                     FARMERS &amp; MERCHANTS BANCORP  (FMCB)  (CIK 0001085913)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78d740e2dc3fe994524e64466dd02402.setIcon(icon_08038a4fb783ee45785f5588dec361cf);
+            
+    
+            var marker_75b7c44a24872930e57ebd4fb5f85db6 = L.marker(
+                [42.4184296, -71.1061639],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_9d3d42238097f681b4ce2190dd2bd0fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c6faf3915cb26e2e2fa48322d0af8bcb = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_42b268d62ad9593603d76c454e03a1f0 = $(`<div id="html_42b268d62ad9593603d76c454e03a1f0" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> ECB Bancorp, Inc. /MD/  (ECBK)  (CIK 0001914605)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-02-05<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> ECB Bancorp announced the opening of a new branch in Medford, Massachusetts.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1914605/000143774926003106/ex_889532.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_c6faf3915cb26e2e2fa48322d0af8bcb.setContent(html_42b268d62ad9593603d76c454e03a1f0);
+            
+        
+
+        marker_75b7c44a24872930e57ebd4fb5f85db6.bindPopup(popup_c6faf3915cb26e2e2fa48322d0af8bcb)
+        ;
+
+        
+    
+    
+            marker_75b7c44a24872930e57ebd4fb5f85db6.bindTooltip(
+                `<div>
+                     ECB Bancorp, Inc. /MD/  (ECBK)  (CIK 0001914605)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_75b7c44a24872930e57ebd4fb5f85db6.setIcon(icon_9d3d42238097f681b4ce2190dd2bd0fa);
+            
+    
+            var marker_27fd6f2ff4feffb9c9612240aede70e0 = L.marker(
+                [44.8341639, -87.377042],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_d8e29de7220d2c977af41f46fdca0a65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1af88152248e8eaf3aab99f0d8abd284 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b54fb856cee75e182ff754fa9372c197 = $(`<div id="html_b54fb856cee75e182ff754fa9372c197" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Bank First Corp  (BFC)  (CIK 0001746109)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-07-18<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Bank First opened a new branch in Sturgeon Bay, Wisconsin during the second quarter of 2025.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1746109/000110465925068872/tm2521094d1_ex99-1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_1af88152248e8eaf3aab99f0d8abd284.setContent(html_b54fb856cee75e182ff754fa9372c197);
+            
+        
+
+        marker_27fd6f2ff4feffb9c9612240aede70e0.bindPopup(popup_1af88152248e8eaf3aab99f0d8abd284)
+        ;
+
+        
+    
+    
+            marker_27fd6f2ff4feffb9c9612240aede70e0.bindTooltip(
+                `<div>
+                     Bank First Corp  (BFC)  (CIK 0001746109)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_27fd6f2ff4feffb9c9612240aede70e0.setIcon(icon_d8e29de7220d2c977af41f46fdca0a65);
+            
+    
+            var marker_5c455385c87acd8c27dcb3b7ebb073a8 = L.marker(
+                [44.8341639, -87.377042],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_b4479876c57f4a78ded6bb7c35323f31 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96c774580d8af40279cfac29ee8c9e07 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_41bd822e4733ebc48c284eb6cf0e912a = $(`<div id="html_41bd822e4733ebc48c284eb6cf0e912a" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Bank First Corp  (BFC)  (CIK 0001746109)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-10-21<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Bank First opened a new branch in Sturgeon Bay, Wisconsin during the second quarter of 2025.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1746109/000110465925101224/tm2529109d1_ex99-1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_96c774580d8af40279cfac29ee8c9e07.setContent(html_41bd822e4733ebc48c284eb6cf0e912a);
+            
+        
+
+        marker_5c455385c87acd8c27dcb3b7ebb073a8.bindPopup(popup_96c774580d8af40279cfac29ee8c9e07)
+        ;
+
+        
+    
+    
+            marker_5c455385c87acd8c27dcb3b7ebb073a8.bindTooltip(
+                `<div>
+                     Bank First Corp  (BFC)  (CIK 0001746109)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5c455385c87acd8c27dcb3b7ebb073a8.setIcon(icon_b4479876c57f4a78ded6bb7c35323f31);
+            
+    
+            var marker_2483bb17dba694b983c255ac0c943870 = L.marker(
+                [37.270973, -79.9414313],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_8029386b8874caef0fbf4f9b98594056 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c68136e6c002694d8ebf06f23132d4c3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_3cef9323278a6aa3e9fcf676afccbcc0 = $(`<div id="html_3cef9323278a6aa3e9fcf676afccbcc0" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> NATIONAL BANKSHARES INC  (NKSH)  (CIK 0000796534)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-01-22<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> National Bankshares opened new branch facilities in Roanoke and Lynchburg, Virginia for market expansion.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/796534/000119312526019510/nksh-ex99_1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_c68136e6c002694d8ebf06f23132d4c3.setContent(html_3cef9323278a6aa3e9fcf676afccbcc0);
+            
+        
+
+        marker_2483bb17dba694b983c255ac0c943870.bindPopup(popup_c68136e6c002694d8ebf06f23132d4c3)
+        ;
+
+        
+    
+    
+            marker_2483bb17dba694b983c255ac0c943870.bindTooltip(
+                `<div>
+                     NATIONAL BANKSHARES INC  (NKSH)  (CIK 0000796534)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2483bb17dba694b983c255ac0c943870.setIcon(icon_8029386b8874caef0fbf4f9b98594056);
+            
+    
+            var marker_0ec566ef97d2cd295b00129a59e772b1 = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_f2da9d9bc87370871dac8b1a8a13bc80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eef5c4119e802825f54cd9034b126b2e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b1f0650b47cdba88078c17ddc865dfef = $(`<div id="html_b1f0650b47cdba88078c17ddc865dfef" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-10-14<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Unity Bank opened its 22nd branch in Madison, New Jersey, strengthening its Morris County presence.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042725000071/unty-20251014xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_eef5c4119e802825f54cd9034b126b2e.setContent(html_b1f0650b47cdba88078c17ddc865dfef);
+            
+        
+
+        marker_0ec566ef97d2cd295b00129a59e772b1.bindPopup(popup_eef5c4119e802825f54cd9034b126b2e)
+        ;
+
+        
+    
+    
+            marker_0ec566ef97d2cd295b00129a59e772b1.bindTooltip(
+                `<div>
+                     UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ec566ef97d2cd295b00129a59e772b1.setIcon(icon_f2da9d9bc87370871dac8b1a8a13bc80);
+            
+    
+            var marker_f6a27962abdbca469b1939919e39562d = L.marker(
+                [40.9465118, -73.0691257],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_0aab8e66a7458a72628196aa245ee2c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a1625a157dcd67ec92d4c08d5f113b2 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_fc498983fc0234479d15c85b4cab0221 = $(`<div id="html_fc498983fc0234479d15c85b4cab0221" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Hanover Bancorp, Inc. /NY  (HNVR)  (CIK 0001828588)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-06-18<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Port Jefferson Banking Center planned to open in June 2025.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1828588/000155837025008709/hnvr-20250618xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_4a1625a157dcd67ec92d4c08d5f113b2.setContent(html_fc498983fc0234479d15c85b4cab0221);
+            
+        
+
+        marker_f6a27962abdbca469b1939919e39562d.bindPopup(popup_4a1625a157dcd67ec92d4c08d5f113b2)
+        ;
+
+        
+    
+    
+            marker_f6a27962abdbca469b1939919e39562d.bindTooltip(
+                `<div>
+                     Hanover Bancorp, Inc. /NY  (HNVR)  (CIK 0001828588)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f6a27962abdbca469b1939919e39562d.setIcon(icon_0aab8e66a7458a72628196aa245ee2c6);
+            
+    
+            var marker_3850dd6fe042404fad57ce6e6f6899aa = L.marker(
+                [40.7598227, -74.417097],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_158d300f9f98814c572a876ca9695cda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db76371378d5ba357af6121ae4387b30 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_079546d8a996734bbc8d59c4c82d736b = $(`<div id="html_079546d8a996734bbc8d59c4c82d736b" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-07-15<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Unity Bank announced intention to open new branch in Madison, New Jersey in Fall 2025.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/920427/000092042725000056/unty-20250715xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_db76371378d5ba357af6121ae4387b30.setContent(html_079546d8a996734bbc8d59c4c82d736b);
+            
+        
+
+        marker_3850dd6fe042404fad57ce6e6f6899aa.bindPopup(popup_db76371378d5ba357af6121ae4387b30)
+        ;
+
+        
+    
+    
+            marker_3850dd6fe042404fad57ce6e6f6899aa.bindTooltip(
+                `<div>
+                     UNITY BANCORP INC /NJ/  (UNTY)  (CIK 0000920427)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3850dd6fe042404fad57ce6e6f6899aa.setIcon(icon_158d300f9f98814c572a876ca9695cda);
+            
+    
+            var marker_b138277e36d581c70edbaad1c87414ef = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_3cf23176aefbb604f3e7dbc938228ed5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4fbaa380c5efba67430462b033857aaa = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_18f03cb948b44fa95dbb1bced77d3199 = $(`<div id="html_18f03cb948b44fa95dbb1bced77d3199" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Dime Community Bancshares, Inc. /NY/  (DCOM, DCOMG, DCOMP)  (CIK 0000846617)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-10-23<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Dime Community Bank opened a new branch on Madison Avenue in Manhattan.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/846617/000084661725000046/dcom-20251023xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_4fbaa380c5efba67430462b033857aaa.setContent(html_18f03cb948b44fa95dbb1bced77d3199);
+            
+        
+
+        marker_b138277e36d581c70edbaad1c87414ef.bindPopup(popup_4fbaa380c5efba67430462b033857aaa)
+        ;
+
+        
+    
+    
+            marker_b138277e36d581c70edbaad1c87414ef.bindTooltip(
+                `<div>
+                     Dime Community Bancshares, Inc. /NY/  (DCOM, DCOMG, DCOMP)  (CIK 0000846617)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b138277e36d581c70edbaad1c87414ef.setIcon(icon_3cf23176aefbb604f3e7dbc938228ed5);
+            
+    
+            var marker_91929f3d890f4f0e5f189d0bb6e73474 = L.marker(
+                [40.0940995, -74.2149889],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_daf130d9892938321e2506d88f8705ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_454d169066408bbc84059ca7d133144c = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_7492232503a642f474f9a78a36024e32 = $(`<div id="html_7492232503a642f474f9a78a36024e32" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Dime Community Bancshares, Inc. /NY/  (DCOM, DCOMG, DCOMP)  (CIK 0000846617)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-07-24<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Dime Community Bank received regulatory approvals to open a branch at 500 Boulevard of the Americas in Lakewood, New Jersey, planned for early 2026.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/846617/000084661725000034/dcom-20250724xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_454d169066408bbc84059ca7d133144c.setContent(html_7492232503a642f474f9a78a36024e32);
+            
+        
+
+        marker_91929f3d890f4f0e5f189d0bb6e73474.bindPopup(popup_454d169066408bbc84059ca7d133144c)
+        ;
+
+        
+    
+    
+            marker_91929f3d890f4f0e5f189d0bb6e73474.bindTooltip(
+                `<div>
+                     Dime Community Bancshares, Inc. /NY/  (DCOM, DCOMG, DCOMP)  (CIK 0000846617)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91929f3d890f4f0e5f189d0bb6e73474.setIcon(icon_daf130d9892938321e2506d88f8705ee);
+            
+    
+            var marker_ea3e888507d24286f63c4508c3f5c53a = L.marker(
+                [47.2258172, -122.5371325],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_dff587251d00782f1cf2872711055190 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c3c56ed82fabef19a8c88535c47b572e = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6e149cf12f06b5d1c8cc6dd411f9dea6 = $(`<div id="html_6e149cf12f06b5d1c8cc6dd411f9dea6" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> TIMBERLAND BANCORP INC  (TSBK)  (CIK 0001046050)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-01-27<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Timberland Bank opened a new full-service branch in University Place, Washington on January 12, 2026.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1046050/000093905726000020/timb8k12626exh991.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_c3c56ed82fabef19a8c88535c47b572e.setContent(html_6e149cf12f06b5d1c8cc6dd411f9dea6);
+            
+        
+
+        marker_ea3e888507d24286f63c4508c3f5c53a.bindPopup(popup_c3c56ed82fabef19a8c88535c47b572e)
+        ;
+
+        
+    
+    
+            marker_ea3e888507d24286f63c4508c3f5c53a.bindTooltip(
+                `<div>
+                     TIMBERLAND BANCORP INC  (TSBK)  (CIK 0001046050)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ea3e888507d24286f63c4508c3f5c53a.setIcon(icon_dff587251d00782f1cf2872711055190);
+            
+    
+            var marker_c27dc25516b639702a8515b88f61f061 = L.marker(
+                [40.7579554, -73.9855319],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_9737e840d910a565ada5d3e7e46c1792 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38d8a4c338fb1b9be02bea0b01aa87e5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_b3d1cfebfadb2dc10ce588ec2986c7e7 = $(`<div id="html_b3d1cfebfadb2dc10ce588ec2986c7e7" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Ponce Financial Group, Inc.  (PDLB)  (CIK 0001874071)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-10-24<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Ponce Bank opened a new branch in the Inwood neighborhood of Manhattan.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1874071/000119312525249382/pdlb-ex99_1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_38d8a4c338fb1b9be02bea0b01aa87e5.setContent(html_b3d1cfebfadb2dc10ce588ec2986c7e7);
+            
+        
+
+        marker_c27dc25516b639702a8515b88f61f061.bindPopup(popup_38d8a4c338fb1b9be02bea0b01aa87e5)
+        ;
+
+        
+    
+    
+            marker_c27dc25516b639702a8515b88f61f061.bindTooltip(
+                `<div>
+                     Ponce Financial Group, Inc.  (PDLB)  (CIK 0001874071)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c27dc25516b639702a8515b88f61f061.setIcon(icon_9737e840d910a565ada5d3e7e46c1792);
+            
+    
+            var marker_293bd481a16c3e54b13dfb7d9612c1ac = L.marker(
+                [40.9465118, -73.0691257],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_8d82e7bb336412a016d72c2667477be8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25dc74990d38db00c09c5e300291a556 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_ea738a6e37b9482562ed4bda2309b4d7 = $(`<div id="html_ea738a6e37b9482562ed4bda2309b4d7" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Hanover Bancorp, Inc. /NY  (HNVR)  (CIK 0001828588)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-09-04<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Port Jefferson Banking Center opened in June 2025.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1828588/000155837025011861/hnvr-20250904xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_25dc74990d38db00c09c5e300291a556.setContent(html_ea738a6e37b9482562ed4bda2309b4d7);
+            
+        
+
+        marker_293bd481a16c3e54b13dfb7d9612c1ac.bindPopup(popup_25dc74990d38db00c09c5e300291a556)
+        ;
+
+        
+    
+    
+            marker_293bd481a16c3e54b13dfb7d9612c1ac.bindTooltip(
+                `<div>
+                     Hanover Bancorp, Inc. /NY  (HNVR)  (CIK 0001828588)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_293bd481a16c3e54b13dfb7d9612c1ac.setIcon(icon_8d82e7bb336412a016d72c2667477be8);
+            
+    
+            var marker_cc633eaefd5ed3f9b43173f667a24b80 = L.marker(
+                [40.9465118, -73.0691257],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_beaf04350eab92aa29c5a7c188ccce2e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d2cdf2d49d0200fa94bb31a4c34fca67 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_942cd7a72e08c5ced547b781187525e4 = $(`<div id="html_942cd7a72e08c5ced547b781187525e4" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Hanover Bancorp, Inc. /MD  (HNVR)  (CIK 0001828588)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-11-12<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Port Jefferson Branch opened June 25, 2025, with $24.1 million Q3 originations and ~$160 million deposits.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1828588/000110465925109407/hnvr-20251111xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_d2cdf2d49d0200fa94bb31a4c34fca67.setContent(html_942cd7a72e08c5ced547b781187525e4);
+            
+        
+
+        marker_cc633eaefd5ed3f9b43173f667a24b80.bindPopup(popup_d2cdf2d49d0200fa94bb31a4c34fca67)
+        ;
+
+        
+    
+    
+            marker_cc633eaefd5ed3f9b43173f667a24b80.bindTooltip(
+                `<div>
+                     Hanover Bancorp, Inc. /MD  (HNVR)  (CIK 0001828588)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc633eaefd5ed3f9b43173f667a24b80.setIcon(icon_beaf04350eab92aa29c5a7c188ccce2e);
+            
+    
+            var marker_3e7a452bf62547ee5287c7f3dde3cddc = L.marker(
+                [40.9465118, -73.0691257],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_b1d65cf20f46b5399aadd6b8408761b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bde736f53a092a16b6a2008c9db86e3 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_48b014a14630bda531bb65982fa7793e = $(`<div id="html_48b014a14630bda531bb65982fa7793e" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Hanover Bancorp, Inc. /MD  (HNVR)  (CIK 0001828588)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-03-12<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Port Jefferson Branch opened June 25, 2025, with $189 million in deposits as of year-end.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1828588/000110465926027122/hnvr-20260312xex99d2.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_1bde736f53a092a16b6a2008c9db86e3.setContent(html_48b014a14630bda531bb65982fa7793e);
+            
+        
+
+        marker_3e7a452bf62547ee5287c7f3dde3cddc.bindPopup(popup_1bde736f53a092a16b6a2008c9db86e3)
+        ;
+
+        
+    
+    
+            marker_3e7a452bf62547ee5287c7f3dde3cddc.bindTooltip(
+                `<div>
+                     Hanover Bancorp, Inc. /MD  (HNVR)  (CIK 0001828588)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3e7a452bf62547ee5287c7f3dde3cddc.setIcon(icon_b1d65cf20f46b5399aadd6b8408761b5);
+            
+    
+            var marker_0236201537f683336f378fe2ef6f08fc = L.marker(
+                [39.9622601, -83.0007065],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_99b638e964e53e4cb77214baa394a0a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b52dd1534604ebcf684ea1ab5aff495f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_2db4762e1777cb27f111bb8d3ad6b60d = $(`<div id="html_2db4762e1777cb27f111bb8d3ad6b60d" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Northwest Bancshares, Inc.  (NWBI)  (CIK 0001471265)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-10-27<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Northwest Bancshares breaking ground on first of three Columbus financial centers scheduled for mid-2026 opening.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1471265/000147126525000156/a2025-09x30nwbi8ker.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_b52dd1534604ebcf684ea1ab5aff495f.setContent(html_2db4762e1777cb27f111bb8d3ad6b60d);
+            
+        
+
+        marker_0236201537f683336f378fe2ef6f08fc.bindPopup(popup_b52dd1534604ebcf684ea1ab5aff495f)
+        ;
+
+        
+    
+    
+            marker_0236201537f683336f378fe2ef6f08fc.bindTooltip(
+                `<div>
+                     Northwest Bancshares, Inc.  (NWBI)  (CIK 0001471265)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0236201537f683336f378fe2ef6f08fc.setIcon(icon_99b638e964e53e4cb77214baa394a0a4);
+            
+    
+            var marker_f4ef2a81447561f342ce948d9e555da1 = L.marker(
+                [32.7884363, -79.9399309],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_f00dbda05e1f4d7b418d2a6c66b645a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_419d4fcee1936336746635d2fbe485c4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_a4e210c22d06d26e6132fef0a98e6a36 = $(`<div id="html_a4e210c22d06d26e6132fef0a98e6a36" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> HUNTINGTON BANCSHARES INC /MD/  (HBAN, HBANL, HBANM, HBANP)  (CIK 0000049196)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-09-08<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> King Street Branch opening in December 2025 in Charleston, South Carolina.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/49196/000004919625000071/hbanbarclayspresentation.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_419d4fcee1936336746635d2fbe485c4.setContent(html_a4e210c22d06d26e6132fef0a98e6a36);
+            
+        
+
+        marker_f4ef2a81447561f342ce948d9e555da1.bindPopup(popup_419d4fcee1936336746635d2fbe485c4)
+        ;
+
+        
+    
+    
+            marker_f4ef2a81447561f342ce948d9e555da1.bindTooltip(
+                `<div>
+                     HUNTINGTON BANCSHARES INC /MD/  (HBAN, HBANL, HBANM, HBANP)  (CIK 0000049196)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4ef2a81447561f342ce948d9e555da1.setIcon(icon_f00dbda05e1f4d7b418d2a6c66b645a1);
+            
+    
+            var marker_6c4c29087f373c1464a183ef730c9491 = L.marker(
+                [25.7741566, -80.1935973],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_eaccc76e1d611e7bd6f7b42016837458 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5320b78c43a18114b71e69d102f027e5 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_46c39c4d2135292cf1438005e1e55071 = $(`<div id="html_46c39c4d2135292cf1438005e1e55071" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Metropolitan Bank Holding Corp.  (MCB)  (CIK 0001476034)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-04-21<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Opened Miami Branch on Tuesday, March 3, 2026.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1476034/000110465926046066/mcb-20260421xex99d2.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_5320b78c43a18114b71e69d102f027e5.setContent(html_46c39c4d2135292cf1438005e1e55071);
+            
+        
+
+        marker_6c4c29087f373c1464a183ef730c9491.bindPopup(popup_5320b78c43a18114b71e69d102f027e5)
+        ;
+
+        
+    
+    
+            marker_6c4c29087f373c1464a183ef730c9491.bindTooltip(
+                `<div>
+                     Metropolitan Bank Holding Corp.  (MCB)  (CIK 0001476034)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6c4c29087f373c1464a183ef730c9491.setIcon(icon_eaccc76e1d611e7bd6f7b42016837458);
+            
+    
+            var marker_8239048d5bcd14885700e62a8f940109 = L.marker(
+                [40.9168692, -72.6624189],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_b40d240673fa31bc6814d91527e2281b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfc12427374ce0df7df541d058a0e2c8 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_e7b10e82149d189c6faf9a15ed68c910 = $(`<div id="html_e7b10e82149d189c6faf9a15ed68c910" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Hanover Bancorp, Inc. /MD  (HNVR)  (CIK 0001828588)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-04-27<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Full-service branch opening authorized in downtown Riverhead, New York later in 2026.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1828588/000110465926049414/hnvr-20260427xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_dfc12427374ce0df7df541d058a0e2c8.setContent(html_e7b10e82149d189c6faf9a15ed68c910);
+            
+        
+
+        marker_8239048d5bcd14885700e62a8f940109.bindPopup(popup_dfc12427374ce0df7df541d058a0e2c8)
+        ;
+
+        
+    
+    
+            marker_8239048d5bcd14885700e62a8f940109.bindTooltip(
+                `<div>
+                     Hanover Bancorp, Inc. /MD  (HNVR)  (CIK 0001828588)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8239048d5bcd14885700e62a8f940109.setIcon(icon_b40d240673fa31bc6814d91527e2281b);
+            
+    
+            var marker_610d6e1ba2a3e30aa4676c710755a4de = L.marker(
+                [39.506926, -77.6522171],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_ccefcad46cc521bea598c5e138775d28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16214a24d2328f918ce25f7dcf281630 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4de7e4221ca1007fdb3e8988e7283b2a = $(`<div id="html_4de7e4221ca1007fdb3e8988e7283b2a" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> FIRST UNITED CORP/MD/  (FUNC)  (CIK 0000763907)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-05-07<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> First United opened a new branch in Boonsboro to strengthen presence in the East market.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/763907/000110465926056785/tm2613814d1_ex99-1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_16214a24d2328f918ce25f7dcf281630.setContent(html_4de7e4221ca1007fdb3e8988e7283b2a);
+            
+        
+
+        marker_610d6e1ba2a3e30aa4676c710755a4de.bindPopup(popup_16214a24d2328f918ce25f7dcf281630)
+        ;
+
+        
+    
+    
+            marker_610d6e1ba2a3e30aa4676c710755a4de.bindTooltip(
+                `<div>
+                     FIRST UNITED CORP/MD/  (FUNC)  (CIK 0000763907)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_610d6e1ba2a3e30aa4676c710755a4de.setIcon(icon_ccefcad46cc521bea598c5e138775d28);
+            
+    
+            var marker_0c6bcb2feba690646bdac229b375dec2 = L.marker(
+                [47.6144219, -122.192337],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_d5cb9abeb1a2c5dd182ecbec72aa8ad0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "times-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_152244f462c710564eee243b655c9253 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_80dfdf36c44373fb9b038bbb7a3bfc94 = $(`<div id="html_80dfdf36c44373fb9b038bbb7a3bfc94" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> First Northwest Bancorp  (FNWB)  (CIK 0001556727)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2026-01-29<br>         <b>Event type:</b> closing<br>         <b>Summary:</b> First Fed Bank permanently closing Bellevue branch on April 30, 2026, reflecting shift toward digital banking services.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1556727/000143774926002355/ex_896209.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_152244f462c710564eee243b655c9253.setContent(html_80dfdf36c44373fb9b038bbb7a3bfc94);
+            
+        
+
+        marker_0c6bcb2feba690646bdac229b375dec2.bindPopup(popup_152244f462c710564eee243b655c9253)
+        ;
+
+        
+    
+    
+            marker_0c6bcb2feba690646bdac229b375dec2.bindTooltip(
+                `<div>
+                     First Northwest Bancorp  (FNWB)  (CIK 0001556727)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c6bcb2feba690646bdac229b375dec2.setIcon(icon_d5cb9abeb1a2c5dd182ecbec72aa8ad0);
+            
+    
+            var marker_71de8e614402b7592a022c5d207a41b9 = L.marker(
+                [32.0790074, -81.0921335],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_3d4ba38ca147a4d15bdfd32913095738 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "arrow-up",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_35b8eec8a7bd3ed632084c74236506cd = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_501e2a36325208f1b42104d01eac6e6a = $(`<div id="html_501e2a36325208f1b42104d01eac6e6a" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> HUNTINGTON BANCSHARES INC /MD/  (HBAN, HBANL, HBANM, HBANP)  (CIK 0000049196)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-12-01<br>         <b>Event type:</b> expansion<br>         <b>Summary:</b> Cadence Bank signed merger agreement with FCB Financial Corp. to expand presence in Savannah and coastal Georgia.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/49196/000114036125043724/ny20057909x3_ex99-15.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_35b8eec8a7bd3ed632084c74236506cd.setContent(html_501e2a36325208f1b42104d01eac6e6a);
+            
+        
+
+        marker_71de8e614402b7592a022c5d207a41b9.bindPopup(popup_35b8eec8a7bd3ed632084c74236506cd)
+        ;
+
+        
+    
+    
+            marker_71de8e614402b7592a022c5d207a41b9.bindTooltip(
+                `<div>
+                     HUNTINGTON BANCSHARES INC /MD/  (HBAN, HBANL, HBANM, HBANP)  (CIK 0000049196)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71de8e614402b7592a022c5d207a41b9.setIcon(icon_3d4ba38ca147a4d15bdfd32913095738);
+            
+    
+            var marker_ceb9d5ab97e85d55773499d312841c5a = L.marker(
+                [25.7929198, -80.1353006],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_ebe5f3481efda741ee74b7d89a9393ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b89825f2ce97db76ec401b482d4c6e1f = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6a054974648b542ec12bc429f205d2fd = $(`<div id="html_6a054974648b542ec12bc429f205d2fd" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Amerant Bancorp Inc.  (AMTB)  (CIK 0001734342)<br>         <b>Ticker:</b> C<br>         <b>Industry:</b> Financial Services<br>         <b>Filing date:</b> 2025-11-10<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Amerant Bank opening new banking center in Miami Beach (Bay Harbor Islands), Florida.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1734342/000173434225000072/amntirdeck-nov2025final.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_b89825f2ce97db76ec401b482d4c6e1f.setContent(html_6a054974648b542ec12bc429f205d2fd);
+            
+        
+
+        marker_ceb9d5ab97e85d55773499d312841c5a.bindPopup(popup_b89825f2ce97db76ec401b482d4c6e1f)
+        ;
+
+        
+    
+    
+            marker_ceb9d5ab97e85d55773499d312841c5a.bindTooltip(
+                `<div>
+                     Amerant Bancorp Inc.  (AMTB)  (CIK 0001734342)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ceb9d5ab97e85d55773499d312841c5a.setIcon(icon_ebe5f3481efda741ee74b7d89a9393ed);
+            
+    
+            var marker_55ad60be584faafbc79e0459056aa16f = L.marker(
+                [42.3602273, -87.8318164],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_757e0627e8e036f67620034aabc9d8a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a47fec643d6c8f513dee332d113c09c7 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_4c0a9488a42cccb67650b37af61e7a65 = $(`<div id="html_4c0a9488a42cccb67650b37af61e7a65" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> FULL HOUSE RESORTS INC  (FLL)  (CIK 0000891482)<br>         <b>Ticker:</b> H<br>         <b>Industry:</b> Travel and Hospitality<br>         <b>Filing date:</b> 2025-11-06<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Full House Resorts received unanimous site approval from Waukegan City Council for permanent American Place Casino facility construction.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/891482/000089148225000054/fll-20251106xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_a47fec643d6c8f513dee332d113c09c7.setContent(html_4c0a9488a42cccb67650b37af61e7a65);
+            
+        
+
+        marker_55ad60be584faafbc79e0459056aa16f.bindPopup(popup_a47fec643d6c8f513dee332d113c09c7)
+        ;
+
+        
+    
+    
+            marker_55ad60be584faafbc79e0459056aa16f.bindTooltip(
+                `<div>
+                     FULL HOUSE RESORTS INC  (FLL)  (CIK 0000891482)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55ad60be584faafbc79e0459056aa16f.setIcon(icon_757e0627e8e036f67620034aabc9d8a0);
+            
+    
+            var marker_b76fb60655288f06318446ce5b185219 = L.marker(
+                [36.0525993, -95.7908195],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_7fcda4203b6dd3a25cb8049b12708830 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1aafaccbb19ba09c72ce9c9cb2bb788d = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_5856d965e5ebffc3e499e19162a6e4e8 = $(`<div id="html_5856d965e5ebffc3e499e19162a6e4e8" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Venu Holding Corp  (VENU)  (CIK 0001770501)<br>         <b>Ticker:</b> H<br>         <b>Industry:</b> Travel and Hospitality<br>         <b>Filing date:</b> 2026-04-02<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Sunset Amphitheater Broken Arrow, a 12,500-capacity venue, targeted to open Fall 2026.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1770501/000149315226014740/ex99-1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_1aafaccbb19ba09c72ce9c9cb2bb788d.setContent(html_5856d965e5ebffc3e499e19162a6e4e8);
+            
+        
+
+        marker_b76fb60655288f06318446ce5b185219.bindPopup(popup_1aafaccbb19ba09c72ce9c9cb2bb788d)
+        ;
+
+        
+    
+    
+            marker_b76fb60655288f06318446ce5b185219.bindTooltip(
+                `<div>
+                     Venu Holding Corp  (VENU)  (CIK 0001770501)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b76fb60655288f06318446ce5b185219.setIcon(icon_7fcda4203b6dd3a25cb8049b12708830);
+            
+    
+            var marker_70515f7cc29bb936ff251724a17a4915 = L.marker(
+                [25.7929198, -80.1353006],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_792a1f5fbf8b6bd1f4c260a77c951124 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec7f4f8b092318ad227a0e6a8bcaf892 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_57ebd2907277914c6cee5551319b41f8 = $(`<div id="html_57ebd2907277914c6cee5551319b41f8" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Sunstone Hotel Investors, Inc.  (SHO, SHO-PH, SHO-PI)  (CIK 0001295810)<br>         <b>Ticker:</b> H<br>         <b>Industry:</b> Travel and Hospitality<br>         <b>Filing date:</b> 2025-08-06<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Andaz Miami Beach hotel opened after renovation, showing strong guest response and accelerating bookings.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1295810/000155837025010406/sho-20250806xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_ec7f4f8b092318ad227a0e6a8bcaf892.setContent(html_57ebd2907277914c6cee5551319b41f8);
+            
+        
+
+        marker_70515f7cc29bb936ff251724a17a4915.bindPopup(popup_ec7f4f8b092318ad227a0e6a8bcaf892)
+        ;
+
+        
+    
+    
+            marker_70515f7cc29bb936ff251724a17a4915.bindTooltip(
+                `<div>
+                     Sunstone Hotel Investors, Inc.  (SHO, SHO-PH, SHO-PI)  (CIK 0001295810)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70515f7cc29bb936ff251724a17a4915.setIcon(icon_792a1f5fbf8b6bd1f4c260a77c951124);
+            
+    
+            var marker_7169bd55524e4102c3f9baf7a64b25da = L.marker(
+                [25.7741566, -80.1935973],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_34b041aab5e71b65b4eec8f6e86afbcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "arrow-up",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4b055cf5eb50e5009cc3fe2dacb9fb91 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_69d9cd8b031164a796f3ddfa77e3aa83 = $(`<div id="html_69d9cd8b031164a796f3ddfa77e3aa83" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Park Hotels &amp; Resorts Inc.  (PK)  (CIK 0001617406)<br>         <b>Ticker:</b> H<br>         <b>Industry:</b> Travel and Hospitality<br>         <b>Filing date:</b> 2025-06-02<br>         <b>Event type:</b> expansion<br>         <b>Summary:</b> Royal Palm South Beach Miami began $103M transformative renovation in May 2025.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1617406/000161740625000040/nareitdeckjune2025final.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_4b055cf5eb50e5009cc3fe2dacb9fb91.setContent(html_69d9cd8b031164a796f3ddfa77e3aa83);
+            
+        
+
+        marker_7169bd55524e4102c3f9baf7a64b25da.bindPopup(popup_4b055cf5eb50e5009cc3fe2dacb9fb91)
+        ;
+
+        
+    
+    
+            marker_7169bd55524e4102c3f9baf7a64b25da.bindTooltip(
+                `<div>
+                     Park Hotels &amp; Resorts Inc.  (PK)  (CIK 0001617406)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7169bd55524e4102c3f9baf7a64b25da.setIcon(icon_34b041aab5e71b65b4eec8f6e86afbcf);
+            
+    
+            var marker_eb2fb828319a669db81ad57e68b610d3 = L.marker(
+                [33.4484367, -112.074141],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_c9177e4a032f5b86c72f861aa09268bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12c734b638aadbb9c3b33e6c438b0539 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_82a93b925865d6e3526fce81df05275e = $(`<div id="html_82a93b925865d6e3526fce81df05275e" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> Ryman Hospitality Properties, Inc.  (RHP)  (CIK 0001040829)<br>         <b>Ticker:</b> H<br>         <b>Industry:</b> Travel and Hospitality<br>         <b>Filing date:</b> 2025-08-05<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Ryman Hospitality completed acquisition of 950-room JW Marriott Phoenix Desert Ridge Resort &amp; Spa on June 10, 2025.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1040829/000155837025010196/tmb-20250804xex99d1.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_12c734b638aadbb9c3b33e6c438b0539.setContent(html_82a93b925865d6e3526fce81df05275e);
+            
+        
+
+        marker_eb2fb828319a669db81ad57e68b610d3.bindPopup(popup_12c734b638aadbb9c3b33e6c438b0539)
+        ;
+
+        
+    
+    
+            marker_eb2fb828319a669db81ad57e68b610d3.bindTooltip(
+                `<div>
+                     Ryman Hospitality Properties, Inc.  (RHP)  (CIK 0001040829)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb2fb828319a669db81ad57e68b610d3.setIcon(icon_c9177e4a032f5b86c72f861aa09268bf);
+            
+    
+            var marker_f4db244201f7863a0abb239887c6459c = L.marker(
+                [35.7564719, -83.9704593],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_6257d96761317ac0da5a463f1343814f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0b69981348fdaebff46cbaba47610594 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6083bc4d4dc62a1538634936c16a0859 = $(`<div id="html_6083bc4d4dc62a1538634936c16a0859" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> SMITH &amp; WESSON BRANDS, INC.  (SWBI)  (CIK 0001092796)<br>         <b>Ticker:</b> H<br>         <b>Industry:</b> Travel and Hospitality<br>         <b>Filing date:</b> 2025-12-04<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Smith &amp; Wesson Academy grand opening in Maryville, Tennessee.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1092796/000119312525308078/d124610dex991.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_0b69981348fdaebff46cbaba47610594.setContent(html_6083bc4d4dc62a1538634936c16a0859);
+            
+        
+
+        marker_f4db244201f7863a0abb239887c6459c.bindPopup(popup_0b69981348fdaebff46cbaba47610594)
+        ;
+
+        
+    
+    
+            marker_f4db244201f7863a0abb239887c6459c.bindTooltip(
+                `<div>
+                     SMITH &amp; WESSON BRANDS, INC.  (SWBI)  (CIK 0001092796)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f4db244201f7863a0abb239887c6459c.setIcon(icon_6257d96761317ac0da5a463f1343814f);
+            
+    
+            var marker_347eb6eb563c9ac1787ae376286520b1 = L.marker(
+                [35.7564719, -83.9704593],
+                {
+}
+            ).addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+            var icon_0c45125afd52d412757dde9de74b8ccd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "plus-circle",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2cbba48fb26ab9495c3957ddcc6554d4 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_bf526e93e2cff35471dc628d824db1a4 = $(`<div id="html_bf526e93e2cff35471dc628d824db1a4" style="width: 100.0%; height: 100.0%;">     <div style="width: 300px;">         <b>Company:</b> SMITH &amp; WESSON BRANDS, INC.  (SWBI)  (CIK 0001092796)<br>         <b>Ticker:</b> H<br>         <b>Industry:</b> Travel and Hospitality<br>         <b>Filing date:</b> 2026-03-05<br>         <b>Event type:</b> opening<br>         <b>Summary:</b> Smith &amp; Wesson Academy grand opening in Maryville, Tennessee for firearm training programs.<br>         <b>SEC filing:</b> <a href="https://www.sec.gov/Archives/edgar/data/1092796/000119312526093923/d120095dex991.htm" target="_blank">Open filing</a>     </div>     </div>`)[0];
+                popup_2cbba48fb26ab9495c3957ddcc6554d4.setContent(html_bf526e93e2cff35471dc628d824db1a4);
+            
+        
+
+        marker_347eb6eb563c9ac1787ae376286520b1.bindPopup(popup_2cbba48fb26ab9495c3957ddcc6554d4)
+        ;
+
+        
+    
+    
+            marker_347eb6eb563c9ac1787ae376286520b1.bindTooltip(
+                `<div>
+                     SMITH &amp; WESSON BRANDS, INC.  (SWBI)  (CIK 0001092796)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_347eb6eb563c9ac1787ae376286520b1.setIcon(icon_0c45125afd52d412757dde9de74b8ccd);
+            
+    
+            tile_layer_3367e8bf68d3d6490692f10270d697c5.addTo(map_b022bf9c3e24736d261489101700e81a);
+        
+    
+                marker_bb2ee8798625bde7d86cdd6e8683c015.setIcon(icon_bf6adc8529dd5dbe895ca8f7fac58eab);
+            
+    
+                marker_07f446ed97bfd787d34c2a6c2c68bd7b.setIcon(icon_63b8da4ef9879fe76d72af3db90480da);
+            
+    
+                marker_afe942af5f770d5f0a314c7a37894c6a.setIcon(icon_0637cdf0f2929bf517cb4b48cd6edb01);
+            
+    
+                marker_f9aaa57a4fb934147d5c1b1cd30eff8c.setIcon(icon_bccd98df3d8c9f93fb264b6c52a67b82);
+            
+    
+                marker_78d740e2dc3fe994524e64466dd02402.setIcon(icon_08038a4fb783ee45785f5588dec361cf);
+            
+    
+                marker_75b7c44a24872930e57ebd4fb5f85db6.setIcon(icon_9d3d42238097f681b4ce2190dd2bd0fa);
+            
+    
+                marker_27fd6f2ff4feffb9c9612240aede70e0.setIcon(icon_d8e29de7220d2c977af41f46fdca0a65);
+            
+    
+                marker_5c455385c87acd8c27dcb3b7ebb073a8.setIcon(icon_b4479876c57f4a78ded6bb7c35323f31);
+            
+    
+                marker_2483bb17dba694b983c255ac0c943870.setIcon(icon_8029386b8874caef0fbf4f9b98594056);
+            
+    
+                marker_0ec566ef97d2cd295b00129a59e772b1.setIcon(icon_f2da9d9bc87370871dac8b1a8a13bc80);
+            
+    
+                marker_f6a27962abdbca469b1939919e39562d.setIcon(icon_0aab8e66a7458a72628196aa245ee2c6);
+            
+    
+                marker_3850dd6fe042404fad57ce6e6f6899aa.setIcon(icon_158d300f9f98814c572a876ca9695cda);
+            
+    
+                marker_b138277e36d581c70edbaad1c87414ef.setIcon(icon_3cf23176aefbb604f3e7dbc938228ed5);
+            
+    
+                marker_91929f3d890f4f0e5f189d0bb6e73474.setIcon(icon_daf130d9892938321e2506d88f8705ee);
+            
+    
+                marker_ea3e888507d24286f63c4508c3f5c53a.setIcon(icon_dff587251d00782f1cf2872711055190);
+            
+    
+                marker_c27dc25516b639702a8515b88f61f061.setIcon(icon_9737e840d910a565ada5d3e7e46c1792);
+            
+    
+                marker_293bd481a16c3e54b13dfb7d9612c1ac.setIcon(icon_8d82e7bb336412a016d72c2667477be8);
+            
+    
+                marker_cc633eaefd5ed3f9b43173f667a24b80.setIcon(icon_beaf04350eab92aa29c5a7c188ccce2e);
+            
+    
+                marker_3e7a452bf62547ee5287c7f3dde3cddc.setIcon(icon_b1d65cf20f46b5399aadd6b8408761b5);
+            
+    
+                marker_0236201537f683336f378fe2ef6f08fc.setIcon(icon_99b638e964e53e4cb77214baa394a0a4);
+            
+    
+                marker_f4ef2a81447561f342ce948d9e555da1.setIcon(icon_f00dbda05e1f4d7b418d2a6c66b645a1);
+            
+    
+                marker_6c4c29087f373c1464a183ef730c9491.setIcon(icon_eaccc76e1d611e7bd6f7b42016837458);
+            
+    
+                marker_8239048d5bcd14885700e62a8f940109.setIcon(icon_b40d240673fa31bc6814d91527e2281b);
+            
+    
+                marker_610d6e1ba2a3e30aa4676c710755a4de.setIcon(icon_ccefcad46cc521bea598c5e138775d28);
+            
+    
+                marker_0c6bcb2feba690646bdac229b375dec2.setIcon(icon_d5cb9abeb1a2c5dd182ecbec72aa8ad0);
+            
+    
+                marker_71de8e614402b7592a022c5d207a41b9.setIcon(icon_3d4ba38ca147a4d15bdfd32913095738);
+            
+    
+                marker_ceb9d5ab97e85d55773499d312841c5a.setIcon(icon_ebe5f3481efda741ee74b7d89a9393ed);
+            
+    
+                marker_55ad60be584faafbc79e0459056aa16f.setIcon(icon_757e0627e8e036f67620034aabc9d8a0);
+            
+    
+                marker_b76fb60655288f06318446ce5b185219.setIcon(icon_7fcda4203b6dd3a25cb8049b12708830);
+            
+    
+                marker_70515f7cc29bb936ff251724a17a4915.setIcon(icon_792a1f5fbf8b6bd1f4c260a77c951124);
+            
+    
+                marker_7169bd55524e4102c3f9baf7a64b25da.setIcon(icon_34b041aab5e71b65b4eec8f6e86afbcf);
+            
+    
+                marker_eb2fb828319a669db81ad57e68b610d3.setIcon(icon_c9177e4a032f5b86c72f861aa09268bf);
+            
+    
+                marker_f4db244201f7863a0abb239887c6459c.setIcon(icon_6257d96761317ac0da5a463f1343814f);
+            
+    
+                marker_347eb6eb563c9ac1787ae376286520b1.setIcon(icon_0c45125afd52d412757dde9de74b8ccd);
+            
+</script>
+</html>
